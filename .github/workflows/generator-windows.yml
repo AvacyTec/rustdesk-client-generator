@@ -44,19 +44,19 @@ env:
 
   # This values are normally passed from the rdgen server via an encrypted zip
 
-  androidappid: "it.mynet.aiuto"
-  apiServer: "rustdesk.mynet.it:21114"
-  appname: "MyNet Assistenza Tecnica"
-  compname: "MyNet"
-  downloadLink: "https://aiuto.mynet.it/"
-  filename: "mynet-assistenza-tecnica"
-  key: "Qy3s10jVjXij5rmbRArE4bAyRCrlDAx8WX+UdIwMiCw="
-  server: "rustdesk.mynet.it"
-  urlLink: "https://aiuto.mynet.it/"
+  androidappid: "br.com.avacy.suporte"
+  apiServer: "https://admin.rustdesk.com"
+  appname: "Avacy Suporte"
+  compname: "Avacy"
+  downloadLink: "https://www.tarefas.avacy.com.br/"
+  filename: "avacy-suporte"
+  key: "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw="
+  server: "rs-ny.rustdesk.com"
+  urlLink: "https://www.avacy.com.br/"
 
   # Logo
-  iconlink_url: "https://raw.githubusercontent.com/mynetit/rustdesk-client-generator/master/img/logo.png"
-  logolink_url: "https://raw.githubusercontent.com/mynetit/rustdesk-client-generator/master/img/logo.png"
+  iconlink_url: "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/img/logo.png"
+  logolink_url: "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/img/logo.png"
   privacylink_url: "false"
 
   # Features
@@ -65,7 +65,7 @@ env:
   cycleMonitor: "true"
   xOffline: "false"
   removeNewVersionNotif: "true"
-  custom: "eyJjb25uLXR5cGUiOiJib3RoIiwiYXBwLW5hbWUiOiJNeU5ldCBBc3Npc3RlbnphIFRlY25pY2EiLCJvdmVycmlkZS1zZXR0aW5ncyI6e30sImRlZmF1bHQtc2V0dGluZ3MiOnsiYWNjZXNzLW1vZGUiOiJjdXN0b20iLCJlbmFibGUta2V5Ym9hcmQiOiJZIiwiZW5hYmxlLWNsaXBib2FyZCI6IlkiLCJlbmFibGUtZmlsZS10cmFuc2ZlciI6IlkiLCJlbmFibGUtYXVkaW8iOiJZIiwiZW5hYmxlLXR1bm5lbCI6IlkiLCJlbmFibGUtcmVtb3RlLXJlc3RhcnQiOiJZIiwiZW5hYmxlLXJlY29yZC1zZXNzaW9uIjoiWSIsImVuYWJsZS1ibG9jay1pbnB1dCI6IlkiLCJhbGxvdy1yZW1vdGUtY29uZmlnLW1vZGlmaWNhdGlvbiI6Ik4iLCJkaXJlY3Qtc2VydmVyIjoiTiIsInZlcmlmaWNhdGlvbi1tZXRob2QiOiJ1c2UtYm90aC1wYXNzd29yZHMiLCJhcHByb3ZlLW1vZGUiOiJwYXNzd29yZC1jbGljayIsImFsbG93LWhpZGUtY20iOiJOIiwiYWxsb3ctcmVtb3ZlLXdhbGxwYXBlciI6IlkiLCJlbmFibGUtcmVtb3RlLXByaW50ZXIiOiJZIiwiZW5hYmxlLWNhbWVyYSI6IlkiLCJlbmFibGUtdGVybWluYWwiOiJZIn0sImVuYWJsZS1sYW4tZGlzY292ZXJ5IjoiWSIsImFsbG93LWF1dG8tZGlzY29ubmVjdCI6Ik4ifQo="
+  custom: "eyJjb25uLXR5cGUiOiJib3RoIiwiYXBwLW5hbWUiOiJBdmFjeSBTdXBvcnRlIiwib3ZlcnJpZGUtc2V0dGluZ3MiOnt9LCJkZWZhdWx0LXNldHRpbmdzIjp7ImFjY2Vzcy1tb2RlIjoiY3VzdG9tIiwiZW5hYmxlLWtleWJvYXJkIjoiWSIsImVuYWJsZS1jbGlwYm9hcmQiOiJZIiwiZW5hYmxlLWZpbGUtdHJhbnNmZXIiOiJZIiwiZW5hYmxlLWF1ZGlvIjoiWSIsImVuYWJsZS10dW5uZWwiOiJZIiwiZW5hYmxlLXJlbW90ZS1yZXN0YXJ0IjoiWSIsImVuYWJsZS1yZWNvcmQtc2Vzc2lvbiI6IlkiLCJlbmFibGUtYmxvY2staW5wdXQiOiJZIiwiYWxsb3ctcmVtb3RlLWNvbmZpZy1tb2RpZmljYXRpb24iOiJOIiwiZGlyZWN0LXNlcnZlciI6Ik4iLCJ2ZXJpZmljYXRpb24tbWV0aG9kIjoidXNlLWJvdGgtcGFzc3dvcmRzIiwiYXBwcm92ZS1tb2RlIjoicGFzc3dvcmQtY2xpY2siLCJhbGxvdy1oaWRlLWNtIjoiTiIsImFsbG93LXJlbW92ZS13YWxscGFwZXIiOiJZIiwiZW5hYmxlLXJlbW90ZS1wcmludGVyIjoiWSIsImVuYWJsZS1jYW1lcmEiOiJZIiwiZW5hYmxlLXRlcm1pbmFsIjoiWSJ9LCJlbmFibGUtbGFuLWRpc2NvdmVyeSI6IlkiLCJhbGxvdy1hdXRvLWRpc2Nvbm5lY3QiOiJOIn0K"
 
 
 jobs:
